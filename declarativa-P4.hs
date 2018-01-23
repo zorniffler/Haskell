@@ -6,7 +6,6 @@ import Data.Maybe
 
 -- Ejercicios Practica 4.
 
-
 --Funciones simples antes de terminar el tema 5:
 
 -- Función if_then_else
@@ -50,14 +49,6 @@ mcd n m = mcd m (mod n m)
 
 mcm :: Int -> Int -> Int
 mcm n m = div (n*m) (mcd n m)
-
-
-
-
-
-
-
-
 
 
 -- Funciones sobre listas:
@@ -106,7 +97,6 @@ esPrimoQ x = if((length[n | n <- [1..x], mod x n==0]) ==2) then True else False
 
 -- Ejercicio 4
 
-
 calculateToBase:: String -> Int -> Int
 calculateToBase "" _ = error "No numero"
 calculateToBase s b = calculateToBase2 (stringToList s) b
@@ -129,11 +119,6 @@ convertHex a = fromJust (elemIndex a b)
 convertHex1 :: Char -> Int
 convertHex1 = fromJust . (`elemIndex` b)
 			where b = (['0'..'9'] ++ ['A'..'Z'])
-
-
-		
-			
-			
 
 
 -- Ejercicio 5
